@@ -1,10 +1,13 @@
 class Payment < CoolpayModel
-  include ActiveModel::Model
-
   attr_accessor :amount, :currency, :recipient_id
 
+  # Only from API
+  attr_accessor :status, :id
+
   def self.all
-    coolpay.list_payments
+    coolpay.list_payments.map do |raw_payment|
+      Payment.new(raw_payment)
+    end
   end
 
   def save

@@ -1,4 +1,7 @@
 class CoolpayModel
+  include ActiveModel::Model
+  include ActiveModel::Conversion
+
   # Yes, I'm writing to a class variable.
   #
   # The Coolpay::Client class keeps a token inside, and doing this prevents
