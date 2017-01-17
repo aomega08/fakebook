@@ -1,2 +1,3 @@
 .payment class="payment--#{payment.status}"
+  b => "#{payment.status.humanize}:"
   = "#{payment.amount} #{payment.currency} to #{payment.recipient_id}"
