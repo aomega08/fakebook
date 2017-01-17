@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Payment do
   describe '.all' do
     it 'calls the Coolpay API for all payments' do
-      expect(subject.class.coolpay).to receive(:list_payments)
+      expect(subject.class.coolpay).to receive(:list_payments).and_return([])
       Payment.all
     end
   end

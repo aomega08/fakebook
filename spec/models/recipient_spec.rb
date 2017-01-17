@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Recipient do
   describe '.find' do
     it 'calls the Coolpay API to search a recipient' do
-      expect(subject.class.coolpay).to receive(:find_recipient).with('francesco')
+      expect(subject.class.coolpay).to receive(:find_recipient).with('francesco').and_return([])
       Recipient.find('francesco')
     end
   end
