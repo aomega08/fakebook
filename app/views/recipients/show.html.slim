@@ -1,0 +1,8 @@
+h1 Matching Recipients
+
+- @recipients.each do |recipient|
+  .recipient
+    = "#{recipient.name} (#{recipient.id}) - "
+    = link_to 'Send a payment', new_payment_path(recipient_id: recipient.id)
+
+= link_to 'New search', recipients_path

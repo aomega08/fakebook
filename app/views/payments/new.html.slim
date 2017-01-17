@@ -1,0 +1,13 @@
+h1 Create a Payment
+
+- if flash[:error]
+  .error = flash[:error]
+
+= form_for @payment do |f|
+  = f.label :amount
+  = f.text_field :amount
+  = f.label :currency
+  = f.text_field :currency
+  = f.label :recipient_id, "Recipient ID"
+  = f.text_field :recipient_id
+  = f.submit

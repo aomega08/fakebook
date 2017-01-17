@@ -1,0 +1,9 @@
+h1 Create a Recipient
+
+- if flash[:error]
+  .error = flash[:error]
+
+= form_for @recipient do |f|
+  = f.label :name
+  = f.text_field :name
+  = f.submit

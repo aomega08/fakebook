@@ -1,0 +1,13 @@
+.payment {
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+
+  &--failed {
+    background-color: lightcoral;
+  }
+
+  &--pending {
+    background: lightyellow;
+  }
+}

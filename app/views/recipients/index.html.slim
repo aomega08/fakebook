@@ -1,0 +1,7 @@
+h1 Search recipients (case sensitive exact match)
+
+= form_tag recipients_path, method: :get do
+  = text_field_tag :name, '', placeholder: 'Name'
+  = submit_tag 'Search'
+
+= link_to 'Create a recipient', new_recipient_path

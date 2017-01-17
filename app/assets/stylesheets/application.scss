@@ -1,4 +1,37 @@
 @import 'bourbon';
 @import 'neat';
 @import 'base/base';
+@import 'modules/*';
 
+body {
+  padding: 16px;
+}
+
+a {
+  color: lighten($blue, 30%) !important;
+}
+
+form {
+  margin-bottom: 16px;
+}
+
+.payment {
+  padding: 8px;
+
+  &--failed {
+    background-color: lightcoral;
+  }
+
+  &--pending {
+    background: lightyellow;
+  }
+}
+
+.error {
+  padding: 16px;
+  margin-bottom: 16px;
+  background: lightcoral;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+}
