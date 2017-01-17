@@ -5,7 +5,7 @@ class RecipientsController < ApplicationController
       if @recipients.length > 0
         render :show
       else
-        flash.now[:error] = "No recipient found for that query"
+        flash.now[:error] = I18n.t('recipients.index.error')
       end
     end
   end
@@ -20,7 +20,7 @@ class RecipientsController < ApplicationController
     if @recipient.save
       redirect_to recipients_path(name: @recipient.name)
     else
-      flash.now[:error] = "There were errors while creating the payment."
+      flash.now[:error] = I18n.t('recipients.create.error')
       render :new
     end
   end

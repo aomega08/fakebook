@@ -4,10 +4,10 @@
   border-radius: 4px;
 
   &--failed {
-    background-color: #fc0;
+    background-color: lightcoral;
   }
 
   &--processing {
-    background: lightyellow;
+    background: #fc0;
   }
 }
