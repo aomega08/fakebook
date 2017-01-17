@@ -20,6 +20,7 @@ gem 'bourbon'
 gem 'neat'
 
 gem 'coolpay', github: 'aomega08/coolpay-ruby'
+gem 'figaro'
 
 group :development, :test do
   gem 'rspec-rails'
