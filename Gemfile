@@ -25,6 +25,7 @@ gem 'figaro'
 group :development, :test do
   gem 'rspec-rails'
   gem 'byebug', platform: :mri
+  gem 'rails-controller-testing'
 end
 
 group :development do
