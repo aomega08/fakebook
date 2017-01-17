@@ -2,7 +2,7 @@ class RecipientsController < ApplicationController
   def index
     if params[:name]
       @recipients = Recipient.find(params[:name])
-      if @recipients.length > 0
+      if @recipients.any?
         render :show
       else
         flash.now[:error] = I18n.t('recipients.index.error')
