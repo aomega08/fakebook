@@ -14,24 +14,3 @@ a {
 form {
   margin-bottom: 16px;
 }
-
-.payment {
-  padding: 8px;
-
-  &--failed {
-    background-color: lightcoral;
-  }
-
-  &--pending {
-    background: lightyellow;
-  }
-}
-
-.error {
-  padding: 16px;
-  margin-bottom: 16px;
-  background: lightcoral;
-  border-radius: 4px;
-  color: white;
-  font-weight: bold;
-}
